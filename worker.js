@@ -17,7 +17,7 @@ export default {
       });
     }
 
-    // Buat helper function untuk menambahkan header CORS ke response
+    // Helper buat response dengan CORS header
     function corsResponse(body, status = 200, contentType = "application/json") {
       return new Response(body, {
         status,
@@ -48,7 +48,7 @@ export default {
           return corsResponse(JSON.stringify({error:"Missing email, password or e_captcha"}), 400);
         }
 
-        // Fungsi MD5 dan loginMLBB sama seperti sebelumnya
+        // MD5 hashing using Web Crypto API
         async function md5Hash(text) {
           const encoder = new TextEncoder();
           const data = encoder.encode(text);
