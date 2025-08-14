@@ -1,4 +1,4 @@
-name = "mlbb-checker-worker"
+name = "Mlbbchecker1"
 account_id = "0e9d4d89e79759674c4b4bf64380fe78"
 workers_dev = true
 compatibility_date = "2025-08-08"
